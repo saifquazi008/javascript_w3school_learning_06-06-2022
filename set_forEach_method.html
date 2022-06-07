@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Method</title>
+</head>
+
+<body>
+    <h2>JavaScript Sets</h2>
+    <p>forEach() calls a function for each element:</p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        // create a set
+
+        const letters = new Set(["a", "b", "c"]);
+
+        // list all Elements
+
+        let text = "";
+        letters.forEach(function (value) {
+            text += value + "<br>";
+        })
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+</body>
+
+</html>
